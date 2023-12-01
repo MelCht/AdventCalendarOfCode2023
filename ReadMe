@@ -1,0 +1,23 @@
+# Advent of Code 2023
+
+Ce dépôt contient mes solutions pour les défis quotidiens du Advent of Code 2023.
+
+## Qu'est-ce que le Advent of Code?
+
+[Advent of Code](https://adventofcode.com/) est un événement annuel organisé par Eric Wastl. Chaque année, du 1er au 25 décembre, un nouveau défi de programmation est publié chaque jour. Les participants sont invités à résoudre ces défis à l'aide de leurs compétences en programmation et à partager leurs solutions avec la communauté.
+
+## Comment Participer?
+
+1. Visitez [le site officiel du Advent of Code](https://adventofcode.com/) pour vous inscrire et accéder aux défis.
+2. Chaque jour, un nouveau problème sera publié.
+
+## Structure du Repositoire
+
+- Chaque jour a son propre dossier (`dayOne`, `dayTwo`, ...).
+- À l'intérieur de chaque dossier, vous trouverez mes fichiers de solution.
+
+## Comment Exécuter les Solutions
+
+Les solutions peuvent être exécutées en utilisant le langage de programmation spécifié dans chaque dossier. Assurez-vous d'avoir l'environnement d'exécution approprié installé (principalement TypeScript avec tsc et node, ou php).
+
+N'hésitez pas à explorer, partager vos propres solutions, et discuter avec d'autres participants. Bon codage!
