@@ -1,36 +1,37 @@
 import { dayTwoProperArray } from '../dayTwoProperArray'
 import { CubeGame } from '../CubeGameClass'
 
-function findMinimumCubes (game: CubeGame): {
+// Could use the function that do kind of the same on part1, but I didn't understand the instructions for the exercise very well (confusing minimum cube by game instead of minimum cube needed to do the game)
+function findmaximumCubes (game: CubeGame): {
   red: number
   green: number
   blue: number
 } {
-  let minRed = Infinity
-  let minGreen = Infinity
-  let minBlue = Infinity
+  let maxRed = 0
+  let maxGreen = 0
+  let maxBlue = 0
 
   game.subsets.forEach(subset => {
     subset.forEach(({ count, color }) => {
       switch (color) {
         case 'red':
-          minRed = Math.min(minRed, count)
+          maxRed = Math.max(maxRed, count)
           break
         case 'green':
-          minGreen = Math.min(minGreen, count)
+          maxGreen = Math.max(maxGreen, count)
           break
         case 'blue':
-          minBlue = Math.min(minBlue, count)
+          maxBlue = Math.max(maxBlue, count)
           break
       }
     })
   })
 
-  // console.log(`Game ${game.id}, Minimum Red: ${minRed}`)
-  // console.log(`Game ${game.id}, Minimum Green: ${minGreen}`)
-  // console.log(`Game ${game.id}, Minimum Blue: ${minBlue}`)
+  // console.log(`Game ${game.id}, maximum Red: ${maxRed}`)
+  // console.log(`Game ${game.id}, maximum Green: ${maxGreen}`)
+  // console.log(`Game ${game.id}, maximum Blue: ${maxBlue}`)
 
-  return { red: minRed, green: minGreen, blue: minBlue }
+  return { red: maxRed, green: maxGreen, blue: maxBlue }
 }
 
 function calculatePower (red: number, green: number, blue: number): number {
@@ -41,12 +42,12 @@ function sumOfPowers (games: CubeGame[]): number {
   let totalPower = 0
 
   for (const game of games) {
-    const { red, green, blue } = findMinimumCubes(game)
+    const { red, green, blue } = findmaximumCubes(game)
     const power = calculatePower(red, green, blue)
     totalPower += power
 
     console.log(
-      `Game ${game.id}: Minimum cubes - Red: ${red}, Green: ${green}, Blue: ${blue}, Power: ${power}`
+      `Game ${game.id}: maximum cubes - Red: ${red}, Green: ${green}, Blue: ${blue}, Power: ${power}`
     )
   }
 
@@ -127,6 +128,6 @@ const gameTest: CubeGame[] = [
 
 // const totalPower = sumOfPowers(gameTest)
 const totalPower = sumOfPowers(dayTwoProperArray)
-// const minimumCube = findMinimumCubes(gameTest)
+// const maximumCube = findmaximumCubes(gameTest)
 console.log(`Sum of powers: ${totalPower}`)
-// console.log(minimumCube)
+// console.log(maximumCube)
