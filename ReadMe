@@ -18,6 +18,6 @@ Ce dépôt contient mes solutions pour les défis quotidiens du Advent of Code 2
 
 ## Comment Exécuter les Solutions
 
-Les solutions peuvent être exécutées en utilisant le langage de programmation spécifié dans chaque dossier. Assurez-vous d'avoir l'environnement d'exécution approprié installé (principalement TypeScript avec tsc et node (npm install), ou php).
+Les solutions peuvent être exécutées en utilisant le langage de programmation spécifié dans chaque dossier. Assurez-vous d'avoir l'environnement d'exécution approprié installé (TypeScript avec tsc et node (npm install)).
 
 N'hésitez pas à explorer, partager vos propres solutions, et discuter avec d'autres participants. Bon codage!
