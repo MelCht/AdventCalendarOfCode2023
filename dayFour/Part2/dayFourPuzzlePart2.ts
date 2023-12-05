@@ -1,3 +1,5 @@
+// Traduction TypeScript d'une solution PHP fournie, avec ajout de commentaire pour la compréhension de la logique
+
 import * as fs from 'fs'
 import path from 'path'
 
