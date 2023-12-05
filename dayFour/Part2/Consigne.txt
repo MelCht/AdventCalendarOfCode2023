@@ -1,0 +1,36 @@
+// Traduction par Chat.GPT
+
+Il n'y a pas actuellement de "points" en jeu. Au lieu de cela, les cartes à gratter vous font gagner plus de cartes
+à gratter égales au nombre de numéros gagnants que vous avez.
+
+Plus précisément, vous gagnez des copies des cartes à gratter en dessous de la carte gagnante, 
+égales au nombre de correspondances. Ainsi, si la carte 10 avait 5 numéros correspondants, vous 
+gagneriez une copie chacune des cartes 11, 12, 13, 14 et 15.
+
+Les copies des cartes à gratter sont évaluées comme des cartes à gratter normales et portent le 
+même numéro de carte que la carte d'origine. Ainsi, si vous gagnez une copie de la carte 10 et qu'elle a 
+5 numéros correspondants, elle gagnerait alors une copie des mêmes cartes que la carte d'origine 10 a 
+remportées : les cartes 11, 12, 13, 14 et 15. Ce processus se répète jusqu'à ce que aucune des copies 
+ne vous fasse gagner d'autres cartes. (Les cartes ne vous feront jamais copier une carte au-delà de la 
+fin de la table.)
+
+Cette fois, l'exemple ci-dessus se déroule différemment :
+
+    Carte 1: 41 48 83 86 17 | 83 86 6 31 17 9 48 53
+    Carte 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19
+    Carte 3: 1 21 53 59 44 | 69 82 63 72 16 21 14 1
+    Carte 4: 41 92 73 84 69 | 59 84 76 51 58 5 54 83
+    Carte 5: 87 83 26 28 32 | 88 30 70 12 93 22 82 36
+    Carte 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11
+
+La carte 1 a quatre numéros correspondants, vous gagnez donc une copie chacune des quatre cartes suivantes : 
+les cartes 2, 3, 4 et 5.
+Votre carte d'origine 2 a deux numéros correspondants, vous gagnez donc une copie chacune des cartes 3 et 4.
+Votre copie de la carte 2 gagne également une copie chacune des cartes 3 et 4.
+Vos quatre instances de la carte 3 (une originale et trois copies) ont deux numéros correspondants, 
+vous gagnez donc quatre copies chacune des cartes 4 et 5.
+Vos huit instances de la carte 4 (une originale et sept copies) ont un numéro correspondant, 
+vous gagnez donc huit copies de la carte 5.
+Vos quatorze instances de la carte 5 (une originale et treize copies) n'ont aucun numéro 
+correspondant et ne gagnent plus de cartes.
+Votre unique instance de la carte 6 (une originale) n'a aucun numéro correspondant et ne gagne plus de cartes.
