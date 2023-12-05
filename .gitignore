@@ -1,4 +1,5 @@
-node_modules
+.gitignore
+ode_modules
 *.js
 dayFive
 dayThree
